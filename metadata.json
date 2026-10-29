@@ -1,0 +1,6 @@
+{
+  "name": "SMK Tridharma LMS",
+  "description": "Sistem Manajemen Pembelajaran (LMS) modern untuk SMK TRIDHARMA GORONTALO dengan portal multi-role (Siswa, Guru, Operator), absensi, materi interaktif MathJax, tugas, dan penilaian sumatif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

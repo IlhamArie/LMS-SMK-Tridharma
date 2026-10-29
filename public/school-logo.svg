@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Filter for subtle crisp drop shadow -->
+    <filter id="badge-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+
+    <radialGradient id="green-bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="65%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </radialGradient>
+
+    <linearGradient id="gold-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="red-flame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+
+    <!-- Path for Top Text Arc: SEKOLAH MENENGAH KEJURUAN -->
+    <path id="upper-arc" d="M 58,188 A 148,148 0 0,1 342,188" fill="none" />
+
+    <!-- Path for Mid Lower Arc: ★ SMK LABORATORIUM TRIDHARMA ★ -->
+    <path id="mid-lower-arc" d="M 58,212 A 146,146 0 0,0 342,212" fill="none" />
+
+    <!-- Path for Bottom-most Arc: UNIVERSITAS NEGERI GORONTALO -->
+    <path id="bottom-arc" d="M 50,270 A 176,176 0 0,0 350,270" fill="none" />
+  </defs>
+
+  <!-- Outer Lotus 5-Corner Scalloped Frame (Bunga Teratai 5 Kelopak) -->
+  <g filter="url(#badge-shadow)">
+    <!-- Outer Golden Frame -->
+    <path
+      d="M 200,16
+         C 238,16 266,40 284,68
+         C 324,66 360,90 368,126
+         C 378,166 362,206 342,234
+         C 346,274 324,314 290,340
+         C 256,366 218,388 200,392
+         C 182,388 144,366 110,340
+         C 76,314 54,274 58,234
+         C 38,206 22,166 32,126
+         C 40,90 76,66 116,68
+         C 134,40 162,16 200,16 Z"
+      fill="url(#green-bg)"
+      stroke="url(#gold-border)"
+      stroke-width="13"
+      stroke-linejoin="round"
+    />
+
+    <!-- Inner Golden Thin Inset Contour Line -->
+    <path
+      d="M 200,26
+         C 232,26 258,46 274,72
+         C 310,70 344,92 352,124
+         C 360,160 346,196 328,222
+         C 332,260 312,296 280,322
+         C 250,346 214,368 200,372
+         C 186,368 150,346 120,322
+         C 88,296 68,260 72,222
+         C 54,196 40,160 48,124
+         C 56,92 90,70 126,72
+         C 142,46 168,26 200,26 Z"
+      fill="none"
+      stroke="#fde047"
+      stroke-width="2.5"
+      opacity="0.9"
+    />
+  </g>
+
+  <!-- Three Red Stars at Top Petal -->
+  <g fill="#dc2626" stroke="#fbbf24" stroke-width="1.2">
+    <!-- Center Star (larger) -->
+    <polygon points="200,34 204,45 215,45 206,52 209,63 200,56 191,63 194,52 185,45 196,45" />
+    <!-- Left Star -->
+    <polygon points="172,41 175,50 185,50 177,56 180,65 172,59 164,65 167,56 159,50 169,50" />
+    <!-- Right Star -->
+    <polygon points="228,41 231,50 241,50 233,56 236,65 228,59 220,65 223,56 215,50 225,50" />
+  </g>
+
+  <!-- Top Text: SEKOLAH MENENGAH KEJURUAN -->
+  <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="15.5" fill="#0f172a" letter-spacing="2">
+    <textPath href="#upper-arc" startOffset="50%" text-anchor="middle">
+      SEKOLAH MENENGAH KEJURUAN
+    </textPath>
+  </text>
+
+  <!-- Center Heraldic Group -->
+  <g transform="translate(0, 0)">
+    <!-- Flanking Green Wings Left & Right -->
+    <g fill="#15803d" stroke="#fef08a" stroke-width="1.5">
+      <!-- Left side stylized feathers -->
+      <path d="M 160,198 C 135,183 120,153 125,118 C 135,143 148,168 165,183 Z" />
+      <path d="M 152,208 C 122,198 105,173 110,143 C 122,168 138,191 158,201 Z" />
+      <path d="M 148,221 C 115,218 100,198 102,173 C 115,195 132,213 152,217 Z" />
+    </g>
+    <g fill="#15803d" stroke="#fef08a" stroke-width="1.5">
+      <!-- Right side stylized feathers -->
+      <path d="M 240,198 C 265,183 280,153 275,118 C 265,143 252,168 235,183 Z" />
+      <path d="M 248,208 C 278,198 295,173 290,143 C 278,168 262,191 242,201 Z" />
+      <path d="M 252,221 C 285,218 300,198 298,173 C 285,195 268,213 248,217 Z" />
+    </g>
+
+    <!-- Center Red Flame Crest -->
+    <path
+      d="M 200,98
+         C 220,128 242,158 242,195
+         C 242,233 224,251 200,251
+         C 176,251 158,233 158,195
+         C 158,158 180,128 200,98 Z"
+      fill="url(#red-flame)"
+      stroke="#fbbf24"
+      stroke-width="2.8"
+    />
+
+    <!-- Gorontalo Traditional Makuta (Mahkota Adat) Motifs inside Flame -->
+    <path
+      d="M 200,133
+         C 215,153 228,178 232,208
+         C 222,205 210,203 200,207
+         C 190,203 178,205 168,208
+         C 172,178 185,153 200,133 Z"
+      fill="#18181b"
+      stroke="#fbbf24"
+      stroke-width="2"
+    />
+
+    <!-- Makuta Winged Base Extensions -->
+    <path
+      d="M 168,208
+         C 152,212 142,224 140,236
+         C 152,234 166,227 176,218 Z"
+      fill="#18181b"
+      stroke="#fbbf24"
+      stroke-width="1.5"
+    />
+    <path
+      d="M 232,208
+         C 248,212 258,224 260,236
+         C 248,234 234,227 224,218 Z"
+      fill="#18181b"
+      stroke="#fbbf24"
+      stroke-width="1.5"
+    />
+
+    <!-- Makuta White Pearls / Dots -->
+    <g fill="#ffffff">
+      <!-- Center vertical pearl spine -->
+      <circle cx="200" cy="148" r="2.2" />
+      <circle cx="193" cy="161" r="2" />
+      <circle cx="207" cy="161" r="2" />
+      <circle cx="187" cy="175" r="2" />
+      <circle cx="213" cy="175" r="2" />
+      <circle cx="182" cy="189" r="2" />
+      <circle cx="218" cy="189" r="2" />
+      <circle cx="178" cy="203" r="2" />
+      <circle cx="222" cy="203" r="2" />
+      <circle cx="192" cy="191" r="2" />
+      <circle cx="208" cy="191" r="2" />
+      <!-- Wing pearls -->
+      <circle cx="150" cy="226" r="1.8" />
+      <circle cx="160" cy="220" r="1.8" />
+      <circle cx="250" cy="226" r="1.8" />
+      <circle cx="240" cy="220" r="1.8" />
+    </g>
+
+    <!-- Gold Makuta Crown Crest Wings -->
+    <g fill="#fbbf24" stroke="#d97706" stroke-width="1">
+      <path d="M 195,138 C 180,158 170,178 166,205 C 172,197 182,189 195,185 Z" />
+      <path d="M 205,138 C 220,158 230,178 234,205 C 228,197 218,189 205,185 Z" />
+    </g>
+
+    <!-- Central Torch / Stylized Pen in Red & Gold -->
+    <g>
+      <polygon points="200,125 205,141 195,141" fill="#fef08a" stroke="#f59e0b" stroke-width="1.5" />
+      <rect x="197" y="141" width="6" height="38" rx="2" fill="#ef4444" stroke="#fbbf24" stroke-width="1.2" />
+      <polygon points="200,185 206,179 194,179" fill="#fbbf24" />
+    </g>
+
+    <!-- Open White Book at the base of the crest -->
+    <g filter="url(#badge-shadow)">
+      <!-- Left Page -->
+      <path
+        d="M 200,241
+           C 182,231 160,229 140,235
+           C 138,251 144,259 160,258
+           C 176,257 192,251 200,259 Z"
+        fill="#ffffff"
+        stroke="#dc2626"
+        stroke-width="2.5"
+      />
+      <path d="M 152,239 C 165,237 178,238 188,242" stroke="#94a3b8" stroke-width="1.2" fill="none" />
+      <path d="M 150,246 C 163,244 176,245 186,249" stroke="#94a3b8" stroke-width="1.2" fill="none" />
+
+      <!-- Right Page -->
+      <path
+        d="M 200,241
+           C 218,231 240,229 260,235
+           C 262,251 256,259 240,258
+           C 224,257 208,251 200,259 Z"
+        fill="#ffffff"
+        stroke="#dc2626"
+        stroke-width="2.5"
+      />
+      <path d="M 248,239 C 235,237 222,238 212,242" stroke="#94a3b8" stroke-width="1.2" fill="none" />
+      <path d="M 250,246 C 237,244 224,245 214,249" stroke="#94a3b8" stroke-width="1.2" fill="none" />
+
+      <!-- Book spine pin -->
+      <polygon points="198,241 202,241 201,261 199,261" fill="#dc2626" />
+    </g>
+  </g>
+
+  <!-- Mid Lower Text: ★ SMK LABORATORIUM TRIDHARMA ★ -->
+  <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12" fill="#0f172a" letter-spacing="1.5">
+    <textPath href="#mid-lower-arc" startOffset="50%" text-anchor="middle">
+      ★ SMK LABORATORIUM TRIDHARMA ★
+    </textPath>
+  </text>
+
+  <!-- Bottom-most Arc Text: UNIVERSITAS NEGERI GORONTALO -->
+  <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12.5" fill="#0f172a" letter-spacing="1.8">
+    <textPath href="#bottom-arc" startOffset="50%" text-anchor="middle">
+      UNIVERSITAS NEGERI GORONTALO
+    </textPath>
+  </text>
+</svg>
